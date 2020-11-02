@@ -1,0 +1,3 @@
+#!/bin/sh
+
+rofi -modi drun -no-lazy-grab -show drun -theme $HOME/.local/share/dwm/launcher.rasi
