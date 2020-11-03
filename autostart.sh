@@ -22,8 +22,8 @@ nitrogen --restore
 [ -n "$(ps -C nextcloud --no-headers)" ] || \
   nextcloud --background &
 
-[ -n "$(ps -C xscreensaver --no-headers)" ] || \
-  xscreensaver -no-splash &
+[ -n "$(ps -C xss-lock --no-headers)" ] || \
+  xss-lock -l -- multilockscreen --lock &
 
 [ -n "$(pgrep gnome-keyring)" ] || \
   gnome-keyring-daemon --start --components=secrets
