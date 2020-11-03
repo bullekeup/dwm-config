@@ -28,7 +28,5 @@ nitrogen --restore
 [ -n "$(pgrep gnome-keyring)" ] || \
   gnome-keyring-daemon --start --components=secrets
 
-[ -n "$(command -v displayset)" ] && displayset
-
 [ -n "$(command -v numlockx)" ] && numlockx on
 
