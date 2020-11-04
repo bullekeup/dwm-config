@@ -22,11 +22,10 @@ nitrogen --restore
 [ -n "$(ps -C nextcloud --no-headers)" ] || \
   nextcloud --background &
 
-[ -n "$(ps -C xss-lock --no-headers)" ] || \
-  xss-lock -l -- multilockscreen --lock &
-
 [ -n "$(pgrep gnome-keyring)" ] || \
   gnome-keyring-daemon --start --components=secrets
 
 [ -n "$(command -v numlockx)" ] && numlockx on
+
+[ -e "${HOME}/.local/bin/mutt-launcher" ] && ~/.local/bin/mutt-launcher
 
