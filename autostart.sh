@@ -29,3 +29,5 @@ nitrogen --restore
 
 [ -e "${HOME}/.local/bin/mutt-launcher" ] && ~/.local/bin/mutt-launcher
 
+[ -e ~/.config/polybar/launch.sh ] && ~/.config/polybar/launch.sh &
+
