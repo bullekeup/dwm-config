@@ -7,6 +7,8 @@ nitrogen --restore
   picom --config ~/.local/share/dwm/picom.conf &
 
 # System utilities / applets
+[ -e ~/.config/polybar/launch.sh ] && ~/.config/polybar/launch.sh
+
 [ -n "$(pgrep dunst)" ] || \
   dunst -conf ~/.config/dunst/dunstrc &
 
@@ -28,6 +30,4 @@ nitrogen --restore
 [ -n "$(command -v numlockx)" ] && numlockx on
 
 [ -e "${HOME}/.local/bin/mutt-launcher" ] && ~/.local/bin/mutt-launcher
-
-[ -e ~/.config/polybar/launch.sh ] && ~/.config/polybar/launch.sh &
 
