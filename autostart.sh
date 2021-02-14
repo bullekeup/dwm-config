@@ -29,5 +29,3 @@ nitrogen --restore
 
 [ -n "$(command -v numlockx)" ] && numlockx on
 
-[ -e "${HOME}/.local/bin/mutt-launcher" ] && ~/.local/bin/mutt-launcher
-
